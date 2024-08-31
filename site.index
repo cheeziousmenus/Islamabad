@@ -1,0 +1,83 @@
+export default {
+  async fetch(request, env, ctx) {
+    const htmlContent = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Cheezious Menu Islamabad</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  line-height: 1.6;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f4f4f4;
+                  color: #333;
+              }
+              main {
+                  max-width: 800px;
+                  margin: 20px auto;
+                  padding: 20px;
+                  background-color: white;
+                  border-radius: 8px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+              h1 {
+                  text-align: center;
+                  color: #ff8c00;
+                  margin-bottom: 20px;
+              }
+              h2 {
+                  color: #007acc;
+                  margin-bottom: 10px;
+              }
+              p {
+                  margin-bottom: 20px;
+              }
+              ul {
+                  list-style-type: disc;
+                  margin-left: 20px;
+                  margin-bottom: 20px;
+              }
+              li {
+                  margin-bottom: 10px;
+              }
+              @media (max-width: 768px) {
+                  main {
+                      margin: 10px;
+                      padding: 15px;
+                  }
+              }
+          </style>
+      </head>
+      <body>
+          <main>
+              <h1>Cheezious Menu Islamabad</h1>
+              <p>If you're a foodie in Islamabad, there's no way you haven't heard of Cheezious, one of the city's most popular fast-food chains. Renowned for its mouthwatering pizzas and scrumptious fast food options, Cheezious has established itself as a go-to spot for anyone craving a delicious meal. Whether you're looking for a quick bite or a hearty dinner, the <a href="https://cheezious-menu.com/cheezious-menu-islamabad/">Islamabad offers</a> offers a wide variety of options to satisfy every palate.</p>
+
+              <h2>Pizzas That Hit the Spot</h2>
+              <p>The highlight of the Cheezious menu is undoubtedly their pizzas. With a range of options from classic flavors to their signature creations, there's something for everyone. The "Super Cheezious Pizza" is a crowd favorite, loaded with a blend of cheeses and topped with succulent chicken, olives, and peppers. If you're in the mood for something spicy, the "Hot and Spicy Pizza" with jalapeños and spicy chicken is sure to set your taste buds on fire.</p>
+
+              <h2>Burgers and More</h2>
+              <p>But Cheezious isn't just about pizza. Their menu also boasts an impressive selection of burgers, each more tempting than the last. The "Cheezious Special Burger," packed with a juicy beef patty, crispy lettuce, and their secret sauce, is a must-try. For those who prefer chicken, the "<a href="https://cheeziousmenus.github.io/Peshawar-menu/">Crispy Chicken Burger</a>" offers a delightful crunch with every bite. Pair your burger with some of their golden fries or cheesy garlic bread for a complete meal.</p>
+
+              <h2>Delicious Sides and Beverages</h2>
+              <p>No meal at Cheezious is complete without exploring their sides and beverages. From their creamy coleslaw to the flavorful mozzarella sticks, the sides perfectly complement the main dishes. And don’t forget to quench your thirst with a refreshing drink from their extensive beverage list.</p>
+
+              <h2>Desserts to End on a Sweet Note</h2>
+              <p>To round off your meal, Cheezious offers some delightful dessert options. The "Chocolate Lava Cake" is a chocolate lover’s dream, oozing with rich, warm chocolate in every bite. It's the perfect way to end your dining experience at Cheezious.</p>
+
+              <p><strong>Final Thoughts</strong></p>
+              <p>Cheezious in Islamabad is more than just a fast-food joint; it's a haven for food enthusiasts. With a menu that caters to all tastes and preferences, it’s no wonder that Cheezious has become a favorite dining spot in the city. Whether you’re dining in or ordering out, the Cheezious menu promises to deliver a satisfying and delicious experience every time.</p>
+          </main>
+      </body>
+      </html>
+    `;
+
+    return new Response(htmlContent, {
+      headers: { "Content-Type": "text/html" },
+    });
+  },
+};
